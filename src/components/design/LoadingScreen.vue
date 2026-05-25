@@ -22,7 +22,7 @@
           <span
             class="loading-text inline-block translate-y-full will-change-auto"
           >
-            Hetari
+            Fine Art
           </span>
         </h3>
 
@@ -30,7 +30,7 @@
           <span
             class="loading-text inline-block translate-y-full opacity-70 will-change-auto"
           >
-            &copy; Folio {{ new Date().getFullYear() }}
+            &copy; Acervo {{ new Date().getFullYear() }}
           </span>
         </p>
 
@@ -44,7 +44,7 @@
           <span
             class="loading-text absolute right-5 bottom-10 inline-block animate-pulse font-mono sm:right-14"
           >
-            Loading...
+            Carregando...
           </span>
         </p>
       </div>

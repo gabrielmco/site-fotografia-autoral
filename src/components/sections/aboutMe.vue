@@ -37,31 +37,25 @@
         <img
           :src="profile2"
           class="aspect-[1/1.5] rounded-lg object-cover object-top mix-blend-screen brightness-90 grayscale"
-          alt="Headshot of Ebraheem facing a camera"
+          alt="Retrato artístico do fotógrafo"
         />
       </div>
       <div class="col-span-11 mt-10 md:col-span-8 md:col-start-6">
         <p
           class="heading-4 relative w-full max-w-[40ch] leading-snug font-medium text-balance"
         >
-          With a passion for design and development, I take projects from
-          ideation to launch, ensuring a seamless journey that leaves a lasting
-          positive impact on the digital landscape and your business.
+          Minha arte é uma busca por isolar o excesso de ruído do mundo. Viajo pelas vastidões silenciosas do Brasil para registrar a pureza das linhas, o movimento lento dos ventos e o contraste intocado da luz.
         </p>
 
         <div
           class="text-flax-smoke-300 mt-[5%] flex justify-start gap-10 sm:gap-20"
         >
           <p class="heading-6 text-flax-smoke-300/85 text-center text-nowrap">
-            ( ABOUT ME )
+            ( O ARTISTA )
           </p>
           <p class="heading-6 font-fancy w-full text-balance sm:max-w-[40ch]">
-            Creating great web experiences is my primary focus. I ensure each
-            project leaves users with a feel-good sensation through meticulous
-            attention to detail and user-centric design principles. <br /><br />
-            When I'm not immersed in web development and design, you can find me
-            sharing insights about my freelance journey on <i>&Xopf;</i>,
-            loudly, playing music (Funk), or just relaxing.
+            A fotografia Fine Art não é sobre registrar um momento rápido, mas sobre esculpir a eternidade através da luz e da matéria. Cada impressão física é uma materialização desse tempo desacelerado na arquitetura contemporânea. <br /><br />
+            Quando não estou em expedições fotográficas isolado na natureza, você pode me encontrar em meu estúdio em São Paulo cuidando pessoalmente do controle de qualidade de curadoria e impressões minerais Hahnemühle.
           </p>
         </div>
       </div>
@@ -88,7 +82,7 @@
 
   onBeforeMount(() => {
     aboutMe.value = textSplitterIntoChar(
-      'Programmer, Developer, Web-animator/',
+      'Fotografia Autoral, Arte Contemporânea, Fine Art/',
       true,
       true,
     );

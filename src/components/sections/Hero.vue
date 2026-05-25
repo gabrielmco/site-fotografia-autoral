@@ -6,7 +6,7 @@
     >
       <div class="relative flex w-full flex-col items-center">
         <div class="w-full items-end overflow-clip">
-          <div class="flex w-full items-start gap-10">
+          <div class="flex w-full items-center gap-10 mt-20 sm:mt-24 md:mt-28">
             <MyName />
             <Star id="star" class="hide-on-mobile translate-x-full" />
           </div>
@@ -38,8 +38,7 @@
             </div>
 
             <p class="sr-only">
-              A freelance full-stack developer, cutting-edge technologies to
-              deliver comprehensive solutions for your business.
+              Fotografia autoral de Fine Art, capturando a essência da luz e da forma para criar obras exclusivas que transformam ambientes e coleções.
             </p>
             <p
               v-html="whoAmI"
@@ -56,7 +55,7 @@
                   class="contact"
                   label="Get in touch"
                 /> -->
-                <Button label="Get in touch" url="https://wa.me/967775367671" />
+                <Button label="Entre em contato" url="https://wa.me/5511999999999" />
               </div>
             </div>
           </div>
@@ -85,7 +84,7 @@
               <p
                 class="3xl:text-base block leading-snug font-medium -tracking-tight uppercase"
               >
-                Available for freelance work
+                Disponível para trabalho freelance
               </p>
               <h3
                 class="3xl:heading-1 heading-1-alt font-fancy block leading-none font-bold -tracking-tight"
@@ -110,7 +109,7 @@
   // import { dataCalConfig, dataCalLink, dataCalNamespace } from '@/data';
 
   const whoAmI = ref(
-    'A freelance full-stack developer, cutting-edge technologies to deliver comprehensive solutions for your business.',
+    'Fotografia autoral de Fine Art, capturando a essência da luz e da forma para criar obras exclusivas que transformam ambientes e coleções.',
   );
   const AvailableForWorkDate = ref('');
 

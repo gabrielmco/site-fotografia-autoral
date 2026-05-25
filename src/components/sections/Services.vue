@@ -14,14 +14,12 @@
         <p
           class="heading-6 text-flax-smoke-300/85 col-span-4 col-start-0 text-center text-nowrap md:col-start-4"
         >
-          ( SERVICES )
+          ( SERVIÇOS )
         </p>
         <p
           class="heading-4 font-fancy col-span-8 w-full text-balance sm:font-semibold md:col-span-5"
         >
-          User-Friendly interface don't happen by chance, they are built with
-          intention. I code intuitive responsive solutions that make your users'
-          journey effortless
+          Espaços inspiradores não acontecem por acaso, eles são compostos com alma. Minha curadoria seleciona e dimensiona fotografias sob medida que harmonizam perfeitamente com a atmosfera do seu projeto.
         </p>
       </div>
     </div>
@@ -50,25 +48,25 @@
   import { onBeforeMount, onMounted, ref } from 'vue';
   import { ServicesCard } from '..';
 
-  const whatIDo = ref('My services /');
+  const whatIDo = ref('Meus serviços /');
 
   const servicesCardProps = [
     {
-      title: 'Web Development',
-      body: 'I create custom-coded websites specifically for your brand. I focus on making sure they are scalable, fast, accessible, and have engaging animations to provide a memorable experience for users.',
-      headings: ['Modern Websites', 'Motion & Animations', 'Scalability'],
+      title: 'Curadoria de Interiores',
+      body: 'Seleção e dimensionamento de obras Fine Art de acordo com a paleta, materiais, incidência de luz e volumetria do espaço residencial ou corporativo, trabalhando em sinergia direta com arquitetos.',
+      headings: ['Harmonização de Ambientes', 'Projetos sob Medida', 'Curadoria Espacial'],
       shape: `<svg viewBox="0 0 200 200"  xmlns="http://www.w3.org/2000/svg">
   <path d="M100 0C103.395 53.7596 146.24 96.6052 200 100C146.24 103.395 103.395 146.24 100 200C96.6052 146.24 53.7596 103.395 0 100C53.7596 96.6052 96.6052 53.7596 100 0Z"/>
   </svg>
   `,
     },
     {
-      title: 'Advanced Solutions',
-      body: 'I specialize in developing advanced web applications that redefine the possibilities of online platforms, crafting progressive web apps and integrating complex systems.',
+      title: 'Coleções Exclusivas',
+      body: 'Obras de arte fotográficas originais e estritamente controladas em tiragens limitadas (1/5, 1/3 ou peça única 1/1), acompanhadas de certificado de autenticidade numerado e assinado à mão pelo fotógrafo.',
       headings: [
-        'Progressive Web Apps',
-        'Complex Integrations',
-        'Innovative Tech Solutions',
+        'Tiragens Numeradas',
+        'Certificação de Autenticidade',
+        'Exclusividade de Acervo',
       ],
       shape: `<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
   <path d="M127.14 200C99.9942 200 99.9943 167.423 72.8487 167.423C41.6048 167.423 0 158.386 0 127.133C0 99.9885 32.5678 99.9885 32.5678 72.8445C32.5678 41.6139 41.6048 0 72.8602 0C100.006 0 100.006 32.5774 127.151 32.5774C158.384 32.5774 200 41.6139 200 72.8675C200 100.012 167.421 100.012 167.421 127.156C167.409 158.444 158.384 200 127.14 200Z" />
@@ -76,12 +74,12 @@
   `,
     },
     {
-      title: 'Code Optimization',
-      body: 'Your website deserves to be seen, speed, and responsiveness. By optimizing load times, improving user experiences, I ensure your site runs smoothly and efficiently.',
+      title: 'Qualidade Hahnemühle',
+      body: 'Utilização exclusiva de papéis de algodão Hahnemühle de alta gramatura e tintas minerais de pigmentação pura. Garantia de fidelidade de cor, profundidade excepcional de pretos e longevidade centenária.',
       headings: [
-        'Modern Frameworks',
-        'Responsive Design',
-        'Speed Optimization',
+        'Pigmento Mineral Puro',
+        'Fibra de Algodão Nobre',
+        'Preservação Museológica',
       ],
       shape: `<svg  viewBox="0 0 200 200"  xmlns="http://www.w3.org/2000/svg">
   <path d="M100 0L170.711 29.2893L200 100L170.711 170.711L100 200L29.2893 170.711L0 100L29.2893 29.2893L100 0Z" />
@@ -91,7 +89,7 @@
   ];
 
   onBeforeMount(() => {
-    whatIDo.value = textSplitterIntoChar('What I do /', true);
+    whatIDo.value = textSplitterIntoChar('Curadoria & Arte /', true);
   });
 
   onMounted(() => {

@@ -14,7 +14,7 @@
       >
         ⮡
       </div>
-      <p class="pl-3.5 pt-0.5">view</p>
+      <p class="pl-3.5 pt-0.5">veja</p>
     </div>
   </div>
 </template>

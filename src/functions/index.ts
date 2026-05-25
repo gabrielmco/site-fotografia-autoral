@@ -40,17 +40,17 @@ const getAvailableForWorkDate = () => {
   const year = date.getFullYear().toString().slice(-2);
   const monthNames = [
     'JAN',
-    'FEB',
+    'FEV',
     'MAR',
-    'APR',
-    'MAY',
+    'ABR',
+    'MAI',
     'JUN',
     'JUL',
-    'AUG',
-    'SEP',
-    'OCT',
+    'AGO',
+    'SET',
+    'OUT',
     'NOV',
-    'DEC',
+    'DEZ',
   ];
   let index = date.getMonth();
 

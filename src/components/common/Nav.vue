@@ -50,12 +50,12 @@
 
       <div class="w-full">
         <div class="text-flax-smoke-50 mt-2 h-full font-normal">
-          <p class="text-left text-sm font-bold uppercase">Email address</p>
+          <p class="text-left text-sm font-bold uppercase">Endereço de E-mail</p>
           <Link
             class="font-medium tracking-wider"
             tag="p"
-            label="hetari4all@gmail.com"
-            url="mailto:hetari4all@gmail.com"
+            label="contato@galeriafineart.com"
+            url="mailto:contato@galeriafineart.com"
           />
           <div class="mt-6 flex flex-wrap justify-start gap-1">
             <Button
@@ -87,7 +87,7 @@
             id="name"
             class="font-fancy flex items-start text-xl font-extrabold uppercase md:text-3xl"
           >
-            hetari
+            fine art
             <span
               class="font-fancy inline! origin-center! text-xl transition-transform duration-500 ease-in-out group-hover:rotate-[360deg]"
               >&copy;</span
@@ -100,8 +100,8 @@
         <p
           class="heading-6 font-fancy text-flax-smoke-400 hidden font-bold uppercase select-none md:block"
         >
-          available for freelancers <br />
-          work and collaboration
+          Disponível para Curadoria <br />
+          e Projetos Sob Medida
         </p>
       </div>
       <div class="flex">

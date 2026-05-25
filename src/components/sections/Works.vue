@@ -21,13 +21,12 @@
         >
           (
           <span class="inline sm:hidden">{{ selectedWorksProps.length }} </span>
-          PROJECTS )
+          PROJETOS )
         </p>
         <p
           class="heading-4 font-fancy col-span-8 w-full text-balance sm:font-semibold lg:col-span-7"
         >
-          Featured client projects that have been meticulously crafted with
-          passion and purpose over the years.
+          Fotografias de coleções em destaque, meticulosamente capturadas com paixão e propósito ao longo de anos de silêncio e exploração.
         </p>
       </div>
     </div>
@@ -62,22 +61,9 @@
               <img
                 alt="work-background"
                 loading="lazy"
-                class="absolute size-full object-cover select-none"
+                class="absolute size-full object-cover select-none transition-transform duration-1000 ease-out group-hover:scale-105"
                 :src="work.imageBg"
               />
-              <div
-                class="flex-center z-10 aspect-4/3 size-full overflow-clip rounded-lg object-cover"
-              >
-                <!-- autoplay="false" -->
-                <video
-                  ref="videoRefs"
-                  :src="work.videoSrc"
-                  muted
-                  :autoplay="false"
-                  type="video/webm"
-                  class="size-[80%] rounded-md object-contain blur transition-all duration-500 ease-in-out"
-                ></video>
-              </div>
             </div>
             <div>
               <p class="heading-6 font-title! mt-[2%] mb-[1%] leading-none">
@@ -113,18 +99,16 @@
 <script setup lang="ts">
   import { animateSplitText } from '@/animations';
   import { textSplitterIntoChar } from '@/functions';
-  import { computed, onBeforeMount, onMounted, ref, useTemplateRef } from 'vue';
+  import { computed, onBeforeMount, onMounted, ref } from 'vue';
   import gsap from 'gsap';
   import { useWindowSize } from '@vueuse/core';
-  import { work1, work2, work3, work4, work5 } from '@/assets/videos';
   import { workBg1, workBg2, workBg3, workBg4, workBg5 } from '@/assets/images';
-  const videoRefs = useTemplateRef<HTMLVideoElement[]>('videoRefs');
 
   const isSmallScreen = computed(() => {
     return useWindowSize().width.value < 768;
   });
   const index = ref(0);
-  const selectedWorks = ref('Selected Projects /');
+  const selectedWorks = ref('Coleções de Obras /');
 
   const tl = gsap
     .timeline({ defaults: { duration: 0.25 } })
@@ -143,49 +127,43 @@
 
   const selectedWorksProps = [
     {
-      name: 'Madar',
-      category: 'Frontend',
-      tags: ['Vue.js', 'Tailwind', 'Gsap'],
-      videoSrc: work5,
-      imageBg: workBg5,
-      url: 'https://madar.services/',
+      name: 'Silêncio das Dunas',
+      category: 'Paisagem Abstrata',
+      tags: ['Minimalismo', 'Textura', 'Tiragem 1/5'],
+      imageBg: workBg1,
+      url: 'https://wa.me/5511999999999',
       year: '2025',
     },
     {
-      name: 'Iphone 15 Clone',
-      category: 'Frontend & Animation & 3D',
-      tags: ['Animation', '3D'],
-      videoSrc: work2,
+      name: 'Sombras Brutalistas',
+      category: 'Arquitetura & Geometria',
+      tags: ['Brutalismo', 'Contraste', 'Tiragem 1/3'],
       imageBg: workBg2,
-      url: 'https://github.com/Hetari/iphone15-pro-clone',
+      url: 'https://wa.me/5511999999999',
       year: '2024',
     },
     {
-      name: 'Axon',
-      category: 'Frontend & Documentation',
-      tags: ['Vue.js', 'Tailwind', 'AI'],
-      videoSrc: work3,
+      name: 'Maresia em Suspensão',
+      category: 'Marítima',
+      tags: ['Longa Exposição', 'Serenidade', 'Tiragem 1/5'],
       imageBg: workBg3,
-      url: 'https://github.com/Hetari/axon',
-
+      url: 'https://wa.me/5511999999999',
       year: '2024',
     },
     {
-      name: 'Blogy',
-      category: 'Frontend & Backend',
-      tags: ['Vue.js', 'Laravel'],
-      videoSrc: work4,
+      name: 'Fissuras da Terra',
+      category: 'Macro & Abstrato',
+      tags: ['Mineral', 'Monocromático', 'Tiragem 1/1'],
       imageBg: workBg4,
-      url: 'https://github.com/Hetari/blog',
+      url: 'https://wa.me/5511999999999',
       year: '2023',
     },
     {
-      name: 'Pyutube',
-      category: 'CLI Tool & Cross Platform',
-      tags: ['Python', 'CLI', 'Youtube'],
-      videoSrc: work1,
-      imageBg: workBg1,
-      url: 'https://github.com/hetari/pyutube',
+      name: 'Neblina na Serra',
+      category: 'Natureza Poética',
+      tags: ['Atmosférico', 'Névoa', 'Tiragem 1/5'],
+      imageBg: workBg5,
+      url: 'https://wa.me/5511999999999',
       year: '2024',
     },
   ];
@@ -233,39 +211,12 @@
     return tl;
   };
 
-  const handleIntersection = (entries: IntersectionObserverEntry[]) => {
-    entries.forEach((entry) => {
-      const video = entry.target as HTMLVideoElement;
-      if (entry.isIntersecting) {
-        video.play();
-        video.classList.remove('blur');
-      }
-    });
-  };
 
-  const stopAllVideos = () => {
-    videoRefs.value?.map((video: HTMLVideoElement) => {
-      if (video && !video.paused) {
-        video.pause();
-        video.currentTime = 0; // Reset video to the start
-      }
-    });
-  };
   onBeforeMount(() => {
-    selectedWorks.value = textSplitterIntoChar('Selected Works / ', true);
+    selectedWorks.value = textSplitterIntoChar('Coleções de Obras / ', true);
   });
 
   onMounted(() => {
-    stopAllVideos();
-
-    const observer = new IntersectionObserver(handleIntersection, {
-      threshold: 0.75, // Trigger when 75% of the video is visible
-    });
-
-    // Observe each video element
-    videoRefs.value?.forEach((video) => {
-      observer.observe(video);
-    });
 
     animateSplitText(
       '#selectedWorks .letters',

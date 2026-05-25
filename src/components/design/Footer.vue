@@ -30,16 +30,16 @@
       <div class="col-span-7 place-content-center md:col-span-6">
         <h6 class="heading-4 sm:heading-2 leading-none font-bold">
           © {{ new Date().getFullYear() }} Huy <br />
-          All rights reserved.
+          Todos os direitos reservados.
         </h6>
       </div>
 
       <div
         class="col-span-5 place-content-center max-sm:place-content-end md:col-span-3"
       >
-        <p class="heading-6 font-bold uppercase">Hetari's Local time</p>
+        <p class="heading-6 font-bold uppercase">Hora local do Estúdio</p>
         <p class="heading-6">{{ myLocalTime }}</p>
-        <p class="heading-6 font-bold uppercase">Your Local time</p>
+        <p class="heading-6 font-bold uppercase">Sua hora local</p>
         <p class="heading-6">{{ userLocalTime }}</p>
       </div>
 
@@ -95,17 +95,17 @@
   // Combine footer sections dynamically
   const footerSections = [
     { title: 'Menu', links: navbarLinks },
-    { title: 'Socials', links: socialLinks },
-    { title: 'Resources', links: resourceLinks },
+    { title: 'Redes Sociais', links: socialLinks },
+    { title: 'Recursos', links: resourceLinks },
   ];
 
   const myLocalTime = ref('');
   const userLocalTime = ref('');
 
   onMounted(() => {
-    myLocalTime.value = moment.tz('Asia/Aden').format('h:mm:ss a');
+    myLocalTime.value = moment.tz('America/Sao_Paulo').format('h:mm:ss a');
     setInterval(() => {
-      myLocalTime.value = moment.tz('Asia/Aden').format('h:mm:ss a');
+      myLocalTime.value = moment.tz('America/Sao_Paulo').format('h:mm:ss a');
     }, 1000);
 
     const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;

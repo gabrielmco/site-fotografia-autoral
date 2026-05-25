@@ -19,7 +19,7 @@
         <p
           class="heading-4 text-flax-smoke-300 max-w-[30ch] text-center font-mono"
         >
-          Your design is a masterpiece waiting to become alive.
+          Seu design é uma obra-prima esperando para ganhar vida.
         </p>
         <h3
           id="make-it-happen"
@@ -35,7 +35,7 @@
             :data-cal-config="dataCalConfig"
             label="Get in touch"
           /> -->
-          <Button label="Get in touch" url="https://wa.me/967775367671" />
+          <Button label="Entre em contato" url="https://wa.me/5511999999999" />
         </div>
       </div>
       <div
@@ -56,21 +56,21 @@
             <p
               class="border-flax-smoke-300 flex size-full items-center justify-start border-b pr-2 pl-1 font-bold"
             >
-              Working Globally
+              Trabalhando Globalmente
             </p>
             <p class="flex size-full items-center justify-start pr-2 pl-1">
-              Available Sep '24
+              Curadoria Disponível
             </p>
           </div>
         </div>
 
         <div class="heading-6 text-flax-smoke-500 w-fit">
-          <p class="w-full font-bold uppercase">For further inquiries</p>
+          <p class="w-full font-bold uppercase">Para mais informações</p>
           <Link
             class="text-flax-smoke-300 h-6 text-right font-medium tracking-wider lowercase"
-            label="hetari4all@gmail"
+            label="contato@galeriafineart.com"
             :icon="true"
-            url="mailto:hetari4all@gmail"
+            url="mailto:contato@galeriafineart.com"
           />
         </div>
       </div>
@@ -89,7 +89,7 @@
   import { animateSplitText } from '@/animations';
   // import { dataCalConfig, dataCalLink, dataCalNamespace } from '@/data';
 
-  const makeItHappen = ref("Let's Make it happen");
+  const makeItHappen = ref("Vamos fazer acontecer");
   onBeforeMount(() => {
     makeItHappen.value = textSplitterIntoChar(makeItHappen.value);
   });

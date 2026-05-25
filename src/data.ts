@@ -7,29 +7,29 @@ export type navLinkType = {
 // Nav
 const navLinks = [
   {
-    label: 'Services',
+    label: 'Serviços',
     url: '#services',
   },
   {
-    label: 'Projects',
+    label: 'Projetos',
     url: '#works',
   },
   {
-    label: 'About',
+    label: 'Sobre',
     url: '#about-me-section',
   },
   {
-    label: 'Testimonials',
+    label: 'Depoimentos',
     url: '#testimonials-section',
   },
   {
-    label: 'Contact',
+    label: 'Contato',
     url: '#contact-section',
   },
 ];
 const navbarLinks = [
   {
-    label: 'Home',
+    label: 'Início',
     url: '#app',
   },
   ...navLinks,
@@ -37,20 +37,20 @@ const navbarLinks = [
 
 const socialLinks = [
   {
-    label: 'X',
-    url: 'https://x.com/hetaridev',
+    label: 'Instagram',
+    url: 'https://instagram.com/fineart.autoral',
   },
   {
-    label: 'Telegram',
-    url: 'https://t.me/e_1_e',
+    label: 'Pinterest',
+    url: 'https://pinterest.com/fineartautoral',
   },
   {
-    label: 'GitHub',
-    url: 'https://github.com/hetari',
+    label: 'WhatsApp',
+    url: 'https://wa.me/5511999999999',
   },
   {
-    label: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/hetaridev/',
+    label: 'E-mail',
+    url: 'mailto:contato@galeriafineart.com',
   },
 ];
 
@@ -60,22 +60,21 @@ const resourceLinks = [
     url: 'https://www.pillarstack.com',
   },
   {
-    label: 'Figma Template',
+    label: 'Template do Figma',
     url: 'https://www.figma.com/community/file/1328038510191576951/project-starter-template',
   },
 ];
 
 const heroText =
-  'A freelance full-stack developer, making good shit since 2023, hiding bad shit since 2023.';
+  'Fotografia Autoral Fine Art — Esculpindo o silêncio do espaço e a poesia da luz. Tiragens limitadas impressas em pigmento mineral sobre papel de algodão para projetos de interiores refinados.';
 
-const locationPlace = `15°22'22.0"N 44°10'39.5"E`;
-const locationCountry = 'Yemen, Sanaa';
+const locationPlace = `2°29'04.0"S 43°07'31.0"W`;
+const locationCountry = 'Maranhão, Brasil';
 
-// cal.com
-const dataCalNamespace = '30min';
-const dataCalLink = 'brhoom/30min';
-const dataCalConfig =
-  '{"layout":"month_view", "theme": "dark", "brand": "#8C8C73"}';
+// cal.com (neutralizado)
+const dataCalNamespace = '';
+const dataCalLink = '';
+const dataCalConfig = '{}';
 
 export {
   socialLinks,
